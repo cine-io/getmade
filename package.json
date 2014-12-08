@@ -1,0 +1,39 @@
+{
+  "author": "BML Ventures Team",
+  "name": "getmade.io",
+  "domains": [
+    "getmade.io"
+  ],
+  "version": "0.1.0",
+  "description": "getmade.io web site",
+  "scripts": {},
+  "repository": "https://github.com/cine-io/getmade",
+  "dependencies": {
+    "express": "^4.10.4",
+    "flux": "^2.0.1",
+    "keymirror": "^0.1.0",
+    "lodash": "^2.4.1",
+    "node-cjsx": "^0.1.2",
+    "object-assign": "^2.0.0",
+    "react": "^0.12.1"
+  },
+  "devDependencies": {
+    "browserify": "^7.0.0",
+    "coffee-react": "^2.1.2",
+    "coffee-reactify": "^2.1.0",
+    "connect-browserify": "^3.2.1",
+    "grunt": "^0.4.5",
+    "grunt-browserify": "^3.2.1",
+    "grunt-concurrent": "^1.0.0",
+    "grunt-contrib-concat": "^0.5.0",
+    "grunt-contrib-sass": "^0.8.1",
+    "grunt-contrib-uglify": "^0.6.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-nodemon": "^0.3.0"
+  },
+  "license": "Copyrighted / All Rights Reserved",
+  "engines": {
+    "node": "0.10.32"
+  },
+  "private": true
+}

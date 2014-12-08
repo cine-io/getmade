@@ -1,10 +1,12 @@
 *.DS_Store
 
+public/**/*.map
+
 newrelic_agent.log
 node_modules
 npm-debug.log
 
-tmp/
-
+.compiled
 .floo
 .flooignore
+.sass-cache

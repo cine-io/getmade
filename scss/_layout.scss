@@ -1,0 +1,7 @@
+#wrapper {
+  @include make-row;
+}
+
+#main {
+  @include make-md-column(12);
+}
