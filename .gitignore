@@ -1,0 +1,10 @@
+*.DS_Store
+
+newrelic_agent.log
+node_modules
+npm-debug.log
+
+tmp/
+
+.floo
+.flooignore
