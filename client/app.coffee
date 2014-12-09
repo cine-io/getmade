@@ -1,7 +1,7 @@
 React = require('react')
-Main = require('./components/Main.react')
+GetMade = require('./components/GetMade.react')
 
 React.render(
-  <Main />,
+  <GetMade />,
   document.getElementById('main')
 )

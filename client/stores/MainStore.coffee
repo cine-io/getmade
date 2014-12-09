@@ -7,7 +7,7 @@ EventEmitter = require("events").EventEmitter
 TodoConstants = require("../constants/MainConstants")
 assign = require("object-assign")
 CHANGE_EVENT = "change"
-_data = { name: "getmade.io", description: "web, iOS, and Android development services" }
+_data = { name: "getmade.io", description: "design and development for iOS, Android, Node.js, and Ruby" }
 
 
 MainStore = assign({}, EventEmitter::,

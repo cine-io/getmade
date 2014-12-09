@@ -1,7 +1,85 @@
-#wrapper {
-  @include make-row;
+body {
+  background: white;
 }
 
-#main {
-  @include make-md-column(12);
+.navbar-brand img {
+  margin-top: -30px;
+  height: 75px;
+}
+
+
+
+#footer {
+  background: $navbar-inverse-bg;
+  color: #aaa;
+
+  h4 {
+    padding-top: 1em;
+    color: white;
+    font-family: $font-family-serif;
+    text-transform: uppercase;
+  }
+
+  ul {
+    padding-left: 0;
+  }
+  li {
+    list-style-type: none;
+  }
+
+  i.fa {
+    width: 11px;
+    margin-right: 5px;
+    text-align: center;
+  }
+
+  a {
+    color: #ddd;
+  }
+
+  .links {
+    @include make-row;
+    .links-box {
+      @include make-md-column(12);
+      &> div {
+        @include make-md-column(4);
+        @include make-xs-column(12);
+      }
+    }
+  }
+
+  .address {
+    margin-top: 1em;
+  }
+
+  .copyright {
+    margin-top: 4em;
+    &> div {
+      text-align: right;
+    }
+    img {
+      width: 60px;
+    }
+    p {
+      text-align: right;
+    }
+  }
+}
+
+@media (min-width: $screen-md-min) {
+  //-- BEGIN: sticky footer
+  $sticky-footer-height: 180px;
+
+  #wrap {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto (-1 * $sticky-footer-height);
+    padding: 0 0 $sticky-footer-height;
+  }
+
+  #push, #footer {
+    height: $sticky-footer-height;
+  }
+  //-- END: sticky footer
 }
