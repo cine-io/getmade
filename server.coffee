@@ -1,5 +1,6 @@
-path        = require("path")
-express     = require("express")
+newrelic = require("newrelic") if process.env.NODE_ENV is "production"
+path = require("path")
+express = require("express")
 
 port = process.env.PORT || 10080
 development = process.env.NODE_ENV isnt "production"
