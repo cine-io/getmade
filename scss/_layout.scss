@@ -1,5 +1,12 @@
-body {
-  background: white;
+html, body {
+  height: 100%;
+  background: black;
+}
+
+#app {
+  height: 100%;
+  background: url(/images/bay-bridge-xs.jpg);
+  background-size: cover;
 }
 
 .navbar-brand img {
@@ -7,7 +14,20 @@ body {
   height: 75px;
 }
 
-
+#main {
+  color: white;
+  .tagline {
+    @include make-row;
+    h2 {
+      @include make-sm-column(3);
+      @include make-sm-column-offset(2);
+      text-transform: uppercase;
+      font-family: $font-family-serif;
+      font-size: 3em;
+      text-shadow: 2px 2px black;
+    }
+  }
+}
 
 #footer {
   background: $navbar-inverse-bg;
@@ -40,9 +60,9 @@ body {
   .links {
     @include make-row;
     .links-box {
-      @include make-md-column(12);
+      @include make-sm-column(12);
       &> div {
-        @include make-md-column(4);
+        @include make-sm-column(4);
         @include make-xs-column(12);
       }
     }
@@ -66,15 +86,21 @@ body {
   }
 }
 
-@media (min-width: $screen-md-min) {
-  //-- BEGIN: sticky footer
+@media (min-width: $screen-sm-min) {
+  #app {
+    height: 100%;
+    background: url(/images/bay-bridge-sm.jpg);
+    background-size: cover;
+  }
+
+  //-- BEGIN: sticky footer (TODO -- this shit never works and this time is no exception)
   $sticky-footer-height: 180px;
 
   #wrap {
     min-height: 100%;
     height: auto !important;
     height: 100%;
-    margin: 0 auto (-1 * $sticky-footer-height);
+    margin: 0 auto (-1 * $sticky-footer-height/2 + 5);
     padding: 0 0 $sticky-footer-height;
   }
 

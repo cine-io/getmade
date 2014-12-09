@@ -3,5 +3,5 @@ GetMade = require('./components/GetMade.react')
 
 React.render(
   <GetMade />,
-  document.getElementById('main')
+  document.getElementById('app')
 )
